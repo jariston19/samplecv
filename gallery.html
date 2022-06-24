@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB RESUME</title>
+  <link rel="icon" type="image" href="img/pic2.ico">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Zen+Maru+Gothic:wght@300&display=swap');
+
+    @media screen and (min-width: 300px) {
+
+      h1 {
+        margin: 0%;
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .container,
+      .container2,
+      .container3,
+      .container4 {
+        width: 60%;
+      }
+
+    }
+
+    @media screen and (max-width: 900px) {
+
+      .navbar {
+        margin-top: 5%;
+      }
+
+      .nav_links {
+        justify-content: space-evenly;
+      }
+
+      .container,
+      .container2,
+      .container3,
+      .container4 {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+      }
+
+      h1 {
+        margin: 0%;
+        font-size: 2rem;
+      }
+    }
+
+    * {
+      border: 0px;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      font-family: 'Zen Maru Gothic', sans-serif;
+      background-image: url(img/cover.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: white;
+    }
+
+    .nav_links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar {
+      overflow: hidden;
+      padding: 2%;
+    }
+
+    .navbar a {
+      font-size: 1.5rem;
+      float: left;
+      color: white;
+      padding: 3px 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(0, 0, 0, 0.308);
+      border-radius: 25px;
+      color: rgba(0, 0, 0, 0.445);
+    }
+
+    .active {
+      background-color: rgba(0, 0, 0, 0.308);
+      border-radius: 25px;
+    }
+
+    .container {
+      display: flex;
+      width: 75%;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container2 {
+      display: flex;
+      width: 75%;
+      margin: auto;
+    }
+
+    .container2>* {
+      flex-basis: 100%;
+    }
+
+    .container3 {
+      display: flex;
+      width: 75%;
+      margin: auto;
+    }
+
+    .container3>* {
+      flex-basis: 100%;
+    }
+
+    .container4 {
+      display: flex;
+      width: 75%;
+      margin: auto;
+    }
+
+    .container4>* {
+      flex-basis: 100%;
+    }
+
+    h1 {
+      color: #ff6400;
+
+    }
+
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+      background-color: rgba(0, 0, 0, 0.308);
+      color: rgb(250, 250, 250);
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+      transition: all 0.5s ease;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .footer {
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul class="nav_links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a class="active" href="gallery.html">GALLERY</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>GALLERY</h1>
+  </div>
+
+  <div class="container2">
+    <div class="gallery">
+      <a target="_top" href="img/1.jpg">
+        <img src="img/1.jpg" alt="Lambug Beach" width="600" height="400">
+      </a>
+      <div class="desc">Lambug Beach
+        <br>Moalboal, Cebu
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_top" href="img/2.jpg">
+        <img src="img/2.jpg" alt="C130" width="600" height="400">
+      </a>
+      <div class="desc">C130 Post Yolanda
+        <br>Ormoc City, Leyte
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_top" href="img/3.jpg">
+        <img src="img/3.jpg" alt="Everland" width="600" height="400">
+      </a>
+      <div class="desc">Universal Wheel
+        <br>Seoul, South Korea
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_top" href="img/4.jpg">
+        <img src="img/4.jpg" alt="Photo Exhibit" width="600" height="400">
+      </a>
+      <div class="desc">Photo Exhibit
+        <br>The Henry Hotel, Cebu City
+      </div>
+    </div>
+  </div>
+  <div class="container3">
+    <div class="gallery">
+      <a target="_top" href="img/5.jpg">
+        <img src="img/5.jpg" alt="Inayawan" width="600" height="400">
+      </a>
+      <div class="desc">Sun Race
+        <br>Inayawan, Cauayan
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_top" href="img/6.jpg">
+        <img src="img/6.jpg" alt="Mactan Bridge" width="600" height="400">
+      </a>
+      <div class="desc">Mactan Bridge
+        <br>Mactan, Lapu - Lapu City
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_top" href="img/7.jpg">
+        <img src="img/7.jpg" alt="Seoul Tower" width="600" height="400">
+      </a>
+      <div class="desc">Seoul Tower
+        <br>Seoul, South Korea
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_top" href="img/8.jpg">
+        <img src="img/8.jpg" alt="Bike" width="600" height="400">
+      </a>
+      <div class="desc">Old Bike
+        <br>Binalbagan, Negros Occidental
+      </div>
+    </div>
+  </div>
+
+  <div class="container4">
+    <div class="gallery">
+      <a target="_top" href="img/9.jpg">
+        <img src="img/9.jpg" alt="Fisherman" width="600" height="400">
+      </a>
+      <div class="desc">Local Fisherman
+        <br>Toboso, Negros Occidental
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_top" href="img/10.jpg">
+        <img src="img/10.jpg" alt="Street Children" width="600" height="400">
+      </a>
+      <div class="desc">Street Children
+        <br>San Carlos City, Negros Occidental
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_top" href="img/11.jpg">
+        <img src="img/11.jpg" alt="Tutorials" width="600" height="400">
+      </a>
+      <div class="desc">Tutorials
+        <br>Himamaylan City, Negros Occidental
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_top" href="img/12.jpg">
+        <img src="img/12.jpg" alt="Kawasan" width="600" height="400">
+      </a>
+      <div class="desc">Parts of Kawasan Falls
+        <br>Badian, Cebu
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright © 2022. All rights reserved.</p>
+  </div>
+</body>
+
+</html>
